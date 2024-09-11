@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Cache DOM elements
+ 
   const signupBox = document.getElementById('signupbox');
   const loginBox = document.getElementById('loginbox');
   const signUpLink = document.getElementById('signUpLink');
   const signInLink = document.getElementById('signInLink');
 
-  // Toggle between signup and login forms
   signUpLink.addEventListener('click', (e) => {
     e.preventDefault();
     signupBox.style.display = 'block';
@@ -18,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loginBox.style.display = 'block';
   });
 
-  // Attach event listeners for signup and login buttons
+ 
   document.getElementById('signupButton').addEventListener('click', async () => {
     await window.signup();
   });
@@ -44,7 +43,7 @@ window.signup = async function() {
       password: password
     });
     alert("Signed up successfully");
-    // Optionally, switch to login view
+   
     document.getElementById('signupbox').style.display = 'none';
     document.getElementById('loginbox').style.display = 'block';
   } catch (error) {
