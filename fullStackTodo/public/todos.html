@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todos</title>
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <!-- Link to external JavaScript file -->
+  <script type="module" src="./todos.js" defer></script>
+</head>
+<body>
+  <div id="userinfo">
+    <!-- Displays user information and logout button -->
+    <h1 id="information"></h1>
+    <button id="logout-button" style="display: none;">Logout</button>
+  </div>
+
+  <h1>Todo List</h1>
+  <div id="container">
+    <!-- Input for new todos -->
+    <input type="text" id="todo-input" placeholder="Enter a new todo">
+    <!-- Button to add a new todo -->
+    <button id="add-todo-button">Add Todo</button>
+    <!-- List to display todos -->
+    <ul id="todo-list"></ul>
+  </div>
+</body>
+</html>

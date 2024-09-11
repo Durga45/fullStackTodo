@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <!-- Link to external JavaScript file -->
+  <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+  <h1 id="title">Todo App</h1>
+  <div id="container">
+    <!-- Signup -->
+    <div id="signupbox">
+      <div id="signupTitle"><h1>Signup</h1></div>
+      <div id="infobox">
+        <input type="text" id="signup-username" name="username" placeholder="Username">
+        <input type="password" id="signup-password" name="password" placeholder="Password">
+        <button id="signupButton" type="button">Signup</button>
+        <h4>Already have an account? <a href="#" id="signInLink">Sign In</a></h4>
+      </div>
+    </div>
+    <!-- Login -->
+    <div id="loginbox" style="display: none;">
+      <div id="loginTitle"><h1>Login</h1></div>
+      <div id="loginInfo">
+        <input type="text" id="login-username" name="username" placeholder="Username">
+        <input type="password" id="login-password" name="password" placeholder="Password">
+        <button id="loginButton" type="button">Login</button>
+        <h4>Don't have an account? <a href="#" id="signUpLink">Sign Up</a></h4>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
